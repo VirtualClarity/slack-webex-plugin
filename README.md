@@ -27,8 +27,9 @@ var config = {
 															// The username is expected to follow this
 	username_pattern: /^[\w\.]+$/,							// A regex which should match allowed username formats.
 															// This one is "any number of word characters (a-z, A-Z, 0-9, _) or full stops in any order"
-	help_message: ":webex <webex-username> e.g. :webex john.smith",	//	What to print when the user gets it wrong. Update this if you 
-															// change pattern
+	help_message: ":webex: <webex-username> e.g. :webex: john.smith",
+															//	What to print when the user gets it wrong. Update this if you change pattern
+	link_preamble: "Join my meeting now at",				// A bit of text to go before the link. If you don't want this comment this line out
     verbose: true,											// Whether not to be verbose on stdout
     emoji: ":webex:"										//NOTE: you'll need to add this emoji
 
