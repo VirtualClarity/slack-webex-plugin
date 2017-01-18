@@ -12,7 +12,9 @@ var config = {
 															//	What to print when the user gets it wrong. Update this if you change pattern
 	link_preamble: "Join my meeting now at",				// A bit of text to go before the link. If you don't want this comment this line out
     verbose: true,											// Whether not to be verbose on stdout
-    emoji: ":webex:",										//NOTE: you'll need to add this emoji
+    emoji: ":webex:",										// Add this emoji by following instructions at
+															// https://get.slack.help/hc/en-us/articles/206870177-Create-custom-emoji
+															// Icon provided in this repo
     user_guess_property: "user.profile.email",				// The user profile property that we should use to guess the user's webex username
 															// if they don't provide it. Some choices:
 															//		user.name					Slack username (e.g. jsmith)
@@ -20,7 +22,7 @@ var config = {
 															//		user.profile.first_name		Slack first name (e.g. John)
 															//		user.profile.last_name		Slack last name (e.g. Smith)
 															//		user.profile.email			Slack email (eg. john.smith@company.com)
-	user_guess_search: "@company.com",				// If you want to manipulate the guessed username you can do a search and replace on the
+	user_guess_search: "@company.com",						// If you want to manipulate the guessed username you can do a search and replace on the
 	user_guess_replace: ""									// result. This example removes the domiain part of the email address
 
 };
