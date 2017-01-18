@@ -1,7 +1,7 @@
 var slackbot = require('./lib/bot');
 
 var config = {
-    bot_name: "WebexBot",									// The name to post the URL as
+    bot_name: "Webex",										// The name to post the URL as
     token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',	// Get a test token from https://api.slack.com/docs/oauth-test-tokens
     webex_url: "https://<mysite>.webex.com/meet/", 			// Replace <mysite> with your WebEx site
     pattern: /^\:webex:(.*)/,			 					// The pattern to look for before responding. Default is :webex:
