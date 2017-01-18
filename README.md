@@ -23,8 +23,6 @@ var config = {
     bot_name: "Webex",										// The name to post the URL as
     token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',	// Get a test token from https://api.slack.com/docs/oauth-test-tokens
     webex_url: "https://<mysite>.webex.com/meet/", 			// Replace <mysite> with your WebEx site
-    pattern: /^\:webex(.*)/,			 					// The pattern to look for before responding. Default is :webex
-															// The username is expected to follow this
     pattern: /\:webex:(.*)/,			 					// The pattern to look for before responding. Default is :webex:
 															// MAKE SURE YOU INCLUDE (.*) AFTER YOUR PATTERN
 															// The username is expected to follow this
