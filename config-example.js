@@ -12,7 +12,14 @@ var config = {
 															//	What to print when the user gets it wrong. Update this if you change pattern
 	link_preamble: "Join my meeting now at",				// A bit of text to go before the link. If you don't want this comment this line out
     verbose: true,											// Whether not to be verbose on stdout
-    emoji: ":webex:"										//NOTE: you'll need to add this emoji
+    emoji: ":webex:",										//NOTE: you'll need to add this emoji
+    user_guess_property: "user.profile.email"				// The user profile property that we should use to guess the user's webex username
+															// if they don't provide it. Some choices:
+															//		user.name					Slack username (e.g. jsmith)
+															//		user.real_name				Slack real name (e.g. John Smith)
+															//		user.profile.first_name		Slack first name (e.g. John)
+															//		user.profile.last_name		Slack last name (e.g. Smith)
+															//		user.profile.email			Slack email (eg. john.smith@company.com)
 
 };
 
