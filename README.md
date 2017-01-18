@@ -6,7 +6,7 @@ It does the following:
 
 1. Produces links, when invoked, to open up your company's Webex page or your Webex personal room
 
-## Usage
+## Installation
 
 ```javascript
 git clone https://github.com/gsingers/slack-webex-plugin.git
