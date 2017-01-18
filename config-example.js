@@ -4,9 +4,12 @@ var config = {
     bot_name: "Webex",										// The name to post the URL as
     token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',	// Get a test token from https://api.slack.com/docs/oauth-test-tokens
     webex_url: "https://<mysite>.webex.com/meet/", 			// Replace <mysite> with your WebEx site
-    pattern: /^\:webex:(.*)/,			 					// The pattern to look for before responding. Default is :webex:
+    pattern: /\:webex:(.*)/,			 					// The pattern to look for before responding. Default is :webex:
+															// MAKE SURE YOU INCLUDE (.*) AFTER YOUR PATTERN
 															// The username is expected to follow this
-	username_pattern: /^[\w\.]+$/,							// A regex which should match allowed username formats.
+	specify_username: true,									// Whether to allow users to specify the WebEx username, or whether to only guess
+	username_pattern: /^\w+\.\w+/,							// A regex which should match allowed username formats. The word that follows the pattern
+															// will be matched against this and used as the webex username
 															// This one is "any number of word characters (a-z, A-Z, 0-9, _) or full stops in any order"
 	help_message: ":webex: <webex-username> e.g. :webex: john.smith",
 															//	What to print when the user gets it wrong. Update this if you change pattern
