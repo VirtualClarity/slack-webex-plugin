@@ -8,7 +8,7 @@ var config = {
       "join": "https://mypath.webex.com/join/",
       "DEFAULT": "https://mypath.webex.com/"
     },
-    pattern: /^\:webex\s+(personal\s+(\w+))\s*$/, //Default is: /webex personal username
+    pattern: /^\:webex\s+(personal\s+(\w+))\s*$/, //Default is: :webex personal <username>
     verbose: true,
     emoji: ":webex:"//NOTE: you'll need to add this emoji
 
