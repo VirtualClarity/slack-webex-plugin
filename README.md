@@ -56,5 +56,4 @@ You must change at least these things:
 
 ## TODO:
 
-- Deeper integration w/ the JIRA API
 - Optionally restrict to certain config'd channels
