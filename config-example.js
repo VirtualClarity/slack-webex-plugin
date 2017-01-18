@@ -10,7 +10,8 @@ var config = {
 	specify_username: true,									// Whether to allow users to specify the WebEx username, or whether to only guess
 	username_pattern: /^\w+\.\w+/,							// A regex which should match allowed username formats. The word that follows the pattern
 															// will be matched against this and used as the webex username
-															// This one is "any number of word characters (a-z, A-Z, 0-9, _) or full stops in any order"
+															// This one is "any number of word characters (a-z, A-Z, 0-9, _) followed by a full stop and
+															// then any number of word characters"
 	help_message: ":webex: <webex-username> e.g. :webex: john.smith",
 															//	What to print when the user gets it wrong. Update this if you change pattern
 	link_preamble: "Join the meeting now at",				// A bit of text to go before the link. If you don't want this comment this line out
