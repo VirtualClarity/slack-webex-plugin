@@ -47,11 +47,12 @@ Save this to a file in the root of the project then run your bot with:
 
 This will launch the bot in your terminal based on provided configuration.
 
-## Configuration
+## Minimum configuration
+
+You must change at least these things:
 
 - `token`: Your Slack API token, get your token at https://api.slack.com/
-- `webex_urls`: A mapping of urls to webex urls.  Usually you just need to replace mypath with your company name or the like
-- `pattern`: A JS Regexp that you want to watch for to invoke webex meetings
+- `webex_url`: A mapping of urls to webex urls.  Usually you just need to replace mypath with your company name or the like
 
 ## TODO:
 
