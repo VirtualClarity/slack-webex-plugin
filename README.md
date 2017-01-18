@@ -41,11 +41,7 @@ slackbot.run();
 
 ```
 
-Save this to a file in the root of the project then run your bot with:
-
-    node your-config-file, eg.: node config-gsingers
-
-This will launch the bot in your terminal based on provided configuration.
+Save this to a file in the root of the project.
 
 ## Minimum configuration
 
@@ -53,6 +49,16 @@ You must change at least these things:
 
 - `token`: Your Slack API token, get your token at https://api.slack.com/
 - `webex_url`: A mapping of urls to webex urls.  Usually you just need to replace mypath with your company name or the like
+
+## Usage
+
+Run your bot with:
+
+    node your-config-file, eg.: node config-gsingers
+
+This will launch the bot in your terminal based on provided configuration. It will connect to the Slack Web API and listen for messages on any channel which begin with
+the pattern. You do not need to invite the bot into the channel, or create a custom integration in your Slack team, or add anything from the marketplace. 
+
 
 ## TODO:
 
