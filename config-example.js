@@ -1,16 +1,12 @@
 var slackbot = require('./lib/bot');
 
 var config = {
-    bot_name: "WebexBot",//Provide the name to post under.  Default is WebexBo
-    token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',
-    webex_urls: {
-      "launch": "https://mypath.webex.com/meet/",//REPLACE THESE W/ YOUR COMPANY URLs
-      "join": "https://mypath.webex.com/join/",
-      "DEFAULT": "https://mypath.webex.com/"
-    },
-    pattern: /^\:webex\s+([\w\.]+)\s*$/, //Default is: /webex personal username
-    verbose: true,
-    emoji: ":webex:"//NOTE: you'll need to add this emoji
+    bot_name: "WebexBot",									// The name to post the URL as
+    token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',	// Get a test token from https://api.slack.com/docs/oauth-test-tokens
+    webex_url: "https://<mysite>.webex.com/meet/", 			// Replace <mysite> with your WebEx site
+    pattern: /^\:webex\s+([\w\.]+)\s*$/, 					// The pattern to look for before responding. Default is :webex <username>
+    verbose: true,											// Whether not to be verbose on stdout
+    emoji: ":webex:"										//NOTE: you'll need to add this emoji
 
 };
 
