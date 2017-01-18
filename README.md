@@ -29,7 +29,7 @@ var config = {
 															// This one is "any number of word characters (a-z, A-Z, 0-9, _) or full stops in any order"
 	help_message: ":webex: <webex-username> e.g. :webex: john.smith",
 															//	What to print when the user gets it wrong. Update this if you change pattern
-	link_preamble: "Join my meeting now at",				// A bit of text to go before the link. If you don't want this comment this line out
+	link_preamble: "Join the meeting now at",				// A bit of text to go before the link. If you don't want this comment this line out
     verbose: true,											// Whether not to be verbose on stdout
     emoji: ":webex:",										// Add this emoji by following instructions at
 															// https://get.slack.help/hc/en-us/articles/206870177-Create-custom-emoji
